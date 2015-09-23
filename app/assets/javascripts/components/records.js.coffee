@@ -13,10 +13,7 @@
       React.DOM.h2
         className: 'title'
         'Records'
-      React.DOM.h2
-        className: 'title'
-        'Records'
-      React.createElement RecordForm #, handleNewRecord: @addRecord
+      React.createElement RecordForm, handleNewRecord: @addRecord
       React.DOM.hr null
     React.DOM.div
       className: 'records'
