@@ -6,6 +6,8 @@ class RecordsController < ApplicationController
   def create
     @record = Record.new(record_params)
 
+    @record.date ||= Date.today
+
     if @record.save
       render json: @record
     else

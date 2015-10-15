@@ -13,7 +13,7 @@
       @setState @getInitialState()
     , 'JSON'
   valid: ->
-    @state.title && @state.date && @state.amount
+    @state.title && @state.amount
   render: ->
     React.DOM.form
       className: 'form-inline'
